@@ -1,4 +1,4 @@
-import rawPerfume from 'raw-loader!perfume.js/dist/perfume.umd.min.js';
+import rawPerfume from 'raw-loader!../perfume.js/dist/perfume.umd.min.js';
 import React from "react";
 import { getGTMDataLayerName, getGTMEventName, isGTMEnabled } from "./utils";
 
