@@ -21,6 +21,7 @@
     "babel-preset-gatsby-package": "^0.1.4",
     "cross-env": "^5.2.0",
     "cypress": "^3.2.0",
+    "cypress-wait-until": "^1.2.1",
     "cz-conventional-changelog": "^2.1.0",
     "start-server-and-test": "^1.9.0"
   },
@@ -40,7 +41,11 @@
     "start:server1": "cd test-projects/base-configuration-test && npm run test:prepare",
     "build:test:project:1": "start-server-and-test start:server1 http://localhost:8001 build:test:project:2",
     "start:server2": "cd test-projects/non-inline-perfume-test && npm run test:prepare",
-    "build:test:project:2": "start-server-and-test start:server2 http://localhost:8002 cy:run",
+    "build:test:project:2": "start-server-and-test start:server2 http://localhost:8002 build:test:project:3",
+    "start:server3": "cd test-projects/gtm-test && npm run test:prepare",
+    "build:test:project:3": "start-server-and-test start:server3 http://localhost:8003 build:test:project:4",
+    "start:server4": "cd test-projects/gtm-test-custom-event && npm run test:prepare",
+    "build:test:project:4": "start-server-and-test start:server4 http://localhost:8004 cy:run",
     "cy:run": "cypress run",
     "cy:open": "cypress open"
   },

@@ -1,4 +1,18 @@
-import rawPerfume from 'raw-loader!./node_modules/perfume.js/dist/perfume.umd.min.js';
+let rawPerfume;
+try {
+  rawPerfume = require('raw-loader!./node_modules/perfume.js/dist/perfume.umd.min.js');
+} catch (err) {}
+if(!rawPerfume) {
+  try {
+    rawPerfume = require('raw-loader!../perfume.js/dist/perfume.umd.min.js');
+  } catch (err) {}
+}
+
+if(!rawPerfume) {
+  throw new Error("Cannot fine perfume.umd.min.js");
+}
+
+// import rawPerfume from 'raw-loader!./node_modules/perfume.js/dist/perfume.umd.min.js';
 import React from "react";
 import { getGTMDataLayerName, getGTMEventName, isGTMEnabled } from "./utils";
 
