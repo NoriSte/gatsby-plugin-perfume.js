@@ -95,11 +95,12 @@ You can even customize the GTM event name/dataLayer
 ### How to track the events in GTM
 
 - Add the `metricName` variable<br />
-![Add the `metricName` variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume/master/assets/gtm-perfume-var-1.png)
+  ![Add the `metricName`
+  variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-var-1.png)
 - Add the `duration` variable<br />
-![Add the `duration` variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume/master/assets/gtm-perfume-var-2.png)
+![Add the `duration` variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-var-2.png)
 - Add the GA event in GTM<br />
-![Add the GA event in GTM](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume/master/assets/gtm-perfume-ga-event.png)
+![Add the GA event in GTM](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-ga-event.png)
 
 ## Contributing
 
