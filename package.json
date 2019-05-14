@@ -20,7 +20,9 @@
     "@babel/core": "^7.4.3",
     "babel-preset-gatsby-package": "^0.1.4",
     "cross-env": "^5.2.0",
-    "cz-conventional-changelog": "^2.1.0"
+    "cypress": "^3.2.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "start-server-and-test": "^1.9.0"
   },
   "config": {
     "commitizen": {
@@ -29,11 +31,17 @@
   },
   "scripts": {
     "commit": "npx git-cz",
-    "test": "yarn build && yarn test:base-configuration-test",
+    "test": "yarn build && yarn build:test:projects",
     "test:base-configuration-test": "cd test-projects/base-configuration-test && npm run test && cd ../..",
     "build": "babel src --out-dir . --ignore **/__tests__",
     "prepare": "cross-env NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "build:test:projects": "yarn build:test:project:1",
+    "start:server1": "cd test-projects/base-configuration-test && npm run test:prepare",
+    "build:test:project:1": "start-server-and-test start:server1 http://localhost:8001 build:test:project:2",
+    "start:server2": "cd test-projects/non-inline-perfume-test && npm run test:prepare",
+    "build:test:project:2": "start-server-and-test start:server2 http://localhost:8002 cy:run",
+    "cy:run": "echo \"ok!\""
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",

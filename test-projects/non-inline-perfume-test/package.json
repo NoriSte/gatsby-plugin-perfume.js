@@ -31,7 +31,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve -p 8001",
+    "serve": "gatsby serve -p 8002",
     "plugin:link": "rm -f ./node_modules/gatsby-plugin-perfume.js && ln -s ../../../ ./node_modules/gatsby-plugin-perfume.js",
     "plugin:copy": "rm -rf ./node_modules/gatsby-plugin-perfume.js && mkdir ./node_modules/gatsby-plugin-perfume.js && \\cp ../../{gatsby-ssr.js,package.json,index.js,utils.js} ./node_modules/gatsby-plugin-perfume.js",
     "test:prepare": "yarn install && npm run plugin:copy && npm run build && npm run serve"

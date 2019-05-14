@@ -21,11 +21,11 @@ export const onRenderBody = ({
   const {plugins, googleTagManagerOptions, inline, ...perfumeOptions} = pluginOptions;
   let perfumeProps = {
     // see https://github.com/gatsbyjs/gatsby/issues/6299
-    key: "https://unpkg.com/perfume.js/dist/perfume.umd.min.js",
+    key: "gatsby-plugin-perfume-loader",
   };
 
   if(inline === false) {
-    perfumeProps.src = unpkgUrl;
+    perfumeProps.src = "https://unpkg.com/perfume.js/dist/perfume.umd.min.js";
   } else {
     perfumeProps.dangerouslySetInnerHTML = {__html: rawPerfume};
   }
