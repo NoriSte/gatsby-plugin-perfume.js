@@ -1,0 +1,48 @@
+import rawPerfume from 'raw-loader!perfume.js/dist/perfume.umd.min.js';
+import React from "react";
+import { getGTMDataLayerName, getGTMEventName, isGTMEnabled } from "./utils";
+
+
+export const onRenderBody = ({
+  setHeadComponents,
+}, pluginOptions) => {
+
+  let analyticsTracker;
+  if(isGTMEnabled(pluginOptions)) {
+    const layerName = getGTMDataLayerName(pluginOptions);
+    analyticsTracker = `function analyticsTracker (metricName, duration) {
+      if(!window["${layerName}"]) {
+        window["${layerName}"] = [];
+      }
+      window["${layerName}"].push({ 'event': "${getGTMEventName(pluginOptions)}", "metricName": metricName, "duration": duration });
+    }`
+  };
+
+  const {plugins, googleTagManagerOptions, inline, ...perfumeOptions} = pluginOptions;
+  let perfumeProps = {
+    // see https://github.com/gatsbyjs/gatsby/issues/6299
+    key: "https://unpkg.com/perfume.js/dist/perfume.umd.min.js",
+  };
+
+  if(inline === false) {
+    perfumeProps.src = unpkgUrl;
+  } else {
+    perfumeProps.dangerouslySetInnerHTML = {__html: rawPerfume};
+  }
+
+  setHeadComponents([
+    React.createElement('script', perfumeProps),
+    React.createElement('script', {
+      // see https://github.com/gatsbyjs/gatsby/issues/6299
+      key:"gatsby-plugin-perfume-init",
+      dangerouslySetInnerHTML: {__html: `
+      (function initPerfume(){
+        var perfumeConfiguration = ${JSON.stringify(perfumeOptions)};
+        ${analyticsTracker ? "perfumeConfiguration.analyticsTracker = " + analyticsTracker : ''}
+        new Perfume(perfumeConfiguration);
+      })()
+    `}})
+  ]
+    );
+
+}
