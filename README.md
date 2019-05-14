@@ -20,7 +20,7 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 ## What this plugin does
 
 - it embeds (Perfume.js)[https://github.com/Zizzamia/perfume.js] with all its [available options](https://github.com/zizzamia/perfume.js#customize--utilities)
-- it allows you to choose wether to embed Perfume.js (suggested) or loading it externally (from [Unpkg](https://unpkg.com))
+- it allows you to choose whether to embed Perfume.js (suggested) or loading it externally (from [Unpkg](https://unpkg.com))
 - (optional) it integrates Perfume.hs with [Google Tag Manager](https://tagmanager.google.com) too
 
 ## How to use
