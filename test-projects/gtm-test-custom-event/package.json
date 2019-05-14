@@ -35,7 +35,7 @@
     "serve": "gatsby serve -p 8004",
     "plugin:link": "rm -f ./node_modules/gatsby-plugin-perfume.js && ln -s ../../../ ./node_modules/gatsby-plugin-perfume.js",
     "plugin:copy": "rm -rf ./node_modules/gatsby-plugin-perfume.js && mkdir ./node_modules/gatsby-plugin-perfume.js && \\cp ../../{gatsby-ssr.js,package.json,index.js,utils.js} ./node_modules/gatsby-plugin-perfume.js",
-    "test:prepare": "yarn install && npm run plugin:copy && npm run build && npm run serve"
+    "test:prepare": "yarn install && npm run plugin:link && npm run build && npm run serve"
   },
   "repository": {
     "type": "git",
