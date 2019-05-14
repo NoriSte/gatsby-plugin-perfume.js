@@ -7,3 +7,6 @@ node_modules
 
 !index.js
 yarn.lock
+
+cypress/videos
+cypress/screenshots

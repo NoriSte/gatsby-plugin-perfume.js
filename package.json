@@ -41,7 +41,8 @@
     "build:test:project:1": "start-server-and-test start:server1 http://localhost:8001 build:test:project:2",
     "start:server2": "cd test-projects/non-inline-perfume-test && npm run test:prepare",
     "build:test:project:2": "start-server-and-test start:server2 http://localhost:8002 cy:run",
-    "cy:run": "echo \"ok!\""
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
