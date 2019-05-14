@@ -41,7 +41,7 @@ export const onRenderBody = ({
   if(inline === false) {
     perfumeProps.src = "https://unpkg.com/perfume.js/dist/perfume.umd.min.js";
   } else {
-    perfumeProps.dangerouslySetInnerHTML = {__html: rawPerfume};
+    perfumeProps.dangerouslySetInnerHTML = {__html: rawPerfume.default};
   }
 
   setHeadComponents([
