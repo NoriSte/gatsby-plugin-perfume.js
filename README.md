@@ -111,7 +111,7 @@ PR or issues are welcome 👋
 
 #### Notes
 
-- if you want to work on the plugin sources, remember that you need to `npm run build` on the root
+- if you want to work on the plugin sources, remember that you need to run `npm run build` on the root
   then, in every test project, you need to run `npm run plugin:link` to locally use it
 
 ## Contributors
