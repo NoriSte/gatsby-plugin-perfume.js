@@ -12,6 +12,7 @@ Quickly add [Perfume.js](https://github.com/zizzamia/perfume.js) to track the pe
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Open Source
 Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNoriSte%2Fgatsby-plugin-perfume.js.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FNoriSte%2Fgatsby-plugin-perfume.js?ref=badge_shield)
 
 <div style="clear:both" />
 <br />
@@ -125,3 +126,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNoriSte%2Fgatsby-plugin-perfume.js.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FNoriSte%2Fgatsby-plugin-perfume.js?ref=badge_large)
