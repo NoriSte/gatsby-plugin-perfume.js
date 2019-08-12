@@ -9,7 +9,9 @@ Quickly add [Perfume.js](https://github.com/zizzamia/perfume.js) to track the pe
 [![Build Status](https://travis-ci.com/NoriSte/gatsby-plugin-perfume.js.svg?branch=master)](https://travis-ci.com/NoriSte/gatsby-plugin-perfume.js)
 [![Build Cron](https://img.shields.io/badge/build%20cron-weekly-44cc11.svg)](https://travis-ci.com/NoriSte/gatsby-plugin-perfume.js)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+<br />
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNoriSte%2Fgatsby-plugin-perfume.js.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FNoriSte%2Fgatsby-plugin-perfume.js?ref=badge_shield)
 [![Open Source
 Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
