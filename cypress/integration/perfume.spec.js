@@ -13,13 +13,17 @@ context('Perfume', () => {
 
   it('The plugin should push the event to the GTM data layer', () => {
     cy.visit('http://localhost:8003');
-    cy.waitUntil(() => cy.window().then(win => !!win.dataLayer))
-    cy.window().then(win => win.dataLayer).then(dataLayer => dataLayer[0]).should('contain', { event: "performance" });
+    cy.window()
+      .should("have.property", "dataLayer")
+      .then(dataLayer => dataLayer[0])
+      .should('contain', { event: "performance" });
   })
 
   it('The plugin should push the event to a custom GTM data layer', () => {
     cy.visit('http://localhost:8004');
-    cy.waitUntil(() => cy.window().then(win => !!win.customDataLayer))
-    cy.window().then(win => win.customDataLayer).then(customDataLayer => customDataLayer[0]).should('contain', { event: "customEventName" });
+    cy.window()
+      .should("have.property", "customDataLayer")
+      .then(dataLayer => dataLayer[0])
+      .should('contain', { event: "customEventName" });
   })
 })
