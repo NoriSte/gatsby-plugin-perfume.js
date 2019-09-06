@@ -20,7 +20,7 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 
 ## Install
 
-`npm install --save gatsby-plugin-perfume`
+`npm install --save gatsby-plugin-perfume.js`
 
 ## What this plugin does
 
