@@ -10,3 +10,5 @@ yarn.lock
 
 cypress/videos
 cypress/screenshots
+
+package-lock.json
