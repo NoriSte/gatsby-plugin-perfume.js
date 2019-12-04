@@ -34,16 +34,20 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 
 ```javascript
 // In your gatsby-config.js
-plugins: [{
-  resolve: 'gatsby-plugin-perfume.js',
-  options: {
-    // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-    firstContentfulPaint: true,
-    firstInputDelay: true,
-    maxMeasureTime: 30000,
-    // see https://github.com/zizzamia/perfume.js#customize--utilities for all the available options
-  },
-}]
+plugins: [
+  {
+    resolve: "gatsby-plugin-perfume.js",
+    options: {
+      // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
+      resourceTiming: true,
+      dataConsumption: true,
+      firstContentfulPaint: true,
+      firstInputDelay: true,
+      maxMeasureTime: 30000
+      // see https://github.com/zizzamia/perfume.js#customize--utilities for all the available options
+    }
+  }
+];
 ```
 
 ### Usage with non-inlined Perfume.js
@@ -101,11 +105,11 @@ You can even customize the GTM event name/dataLayer
 
 - Add the `metricName` variable<br />
   ![Add the `metricName`
-  variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-var-1.png)
+variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-var-1.png)
 - Add the `duration` variable<br />
-![Add the `duration` variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-var-2.png)
+  ![Add the `duration` variable](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-var-2.png)
 - Add the GA event in GTM<br />
-![Add the GA event in GTM](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-ga-event.png)
+  ![Add the GA event in GTM](https://raw.githubusercontent.com/NoriSte/gatsby-plugin-perfume.js/master/assets/gtm-perfume-ga-event.png)
 
 ## Contributing
 
