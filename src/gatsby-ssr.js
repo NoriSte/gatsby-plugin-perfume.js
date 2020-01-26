@@ -9,7 +9,7 @@ if (!rawPerfume) {
 }
 
 if (!rawPerfume) {
-  throw new Error("Cannot fine perfume.umd.min.js");
+  throw new Error("Cannot find perfume.umd.min.js");
 }
 
 // import rawPerfume from 'raw-loader!./node_modules/perfume.js/dist/perfume.umd.min.js';
