@@ -31,17 +31,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-perfume.js',
+      resolve: "gatsby-plugin-perfume.js",
       options: {
-        // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-        firstContentfulPaint: true,
-        firstInputDelay: true,
-        maxMeasureTime: 30000,
-        // see https://github.com/zizzamia/perfume.js#customize--utilities for all the available
+        // see https://github.com/Zizzamia/perfume.js#perfume-custom-options for all the available
         // options
-
-        inline: false
+        inline: false,
       },
-    }
+    },
   ],
 }

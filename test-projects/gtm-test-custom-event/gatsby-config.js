@@ -31,18 +31,16 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-perfume.js',
+      resolve: "gatsby-plugin-perfume.js",
       options: {
-        // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-        firstContentfulPaint: true,
         // optional, if present, a Google Tag Manager event is triggered for every specified performance metric
         googleTagManagerOptions: {
           // optional, default to `performance`, `metricName` and `duration` are passed as event data
           eventName: "customEventName",
           // optional, default to "dataLayer"
-          dataLayerName: "customDataLayer"
-        }
-      }
-    }
+          dataLayerName: "customDataLayer",
+        },
+      },
+    },
   ],
 }

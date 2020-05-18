@@ -31,13 +31,11 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-perfume.js',
+      resolve: "gatsby-plugin-perfume.js",
       options: {
-        // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-        firstContentfulPaint: true,
         // optional, if present, a Google Tag Manager event is triggered for every specified performance metric (the event is `performance`)
-        googleTagManagerOptions: true
-      }
-    }
+        googleTagManagerOptions: true,
+      },
+    },
   ],
 }

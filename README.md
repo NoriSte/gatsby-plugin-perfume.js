@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/Zizzamia/perfume.js/master/docs/src/assets/perfume-logo-v2-1-2.png" align="left" width="100" />
 </a>
 
-Quickly add [Perfume.js](https://github.com/zizzamia/perfume.js) to track the performance metrics.
+Quickly add [Perfume.js (V5)](https://github.com/zizzamia/perfume.js) to track the performance metrics.
 
 [![Build Status](https://travis-ci.com/NoriSte/gatsby-plugin-perfume.js.svg?branch=master)](https://travis-ci.com/NoriSte/gatsby-plugin-perfume.js)
 [![Build Cron](https://img.shields.io/badge/build%20cron-weekly-44cc11.svg)](https://travis-ci.com/NoriSte/gatsby-plugin-perfume.js)
@@ -24,7 +24,7 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 
 ## What this plugin does
 
-- it embeds [Perfume.js](https://github.com/Zizzamia/perfume.js) with all its [available options](https://github.com/zizzamia/perfume.js#customize--utilities)
+- it embeds [Perfume.js (V5)](https://github.com/Zizzamia/perfume.js) with all its [available options](https://github.com/Zizzamia/perfume.js#perfume-custom-options)
 - it allows you to choose whether to embed Perfume.js (suggested) or loading it externally (from [Unpkg](https://unpkg.com))
 - (optional) it integrates Perfume.hs with [Google Tag Manager](https://tagmanager.google.com) too
 
@@ -37,14 +37,22 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 plugins: [
   {
     resolve: "gatsby-plugin-perfume.js",
+  }
+];
+```
+
+With custom options
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: "gatsby-plugin-perfume.js",
     options: {
       // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-      resourceTiming: true,
-      dataConsumption: true,
-      firstContentfulPaint: true,
-      firstInputDelay: true,
-      maxMeasureTime: 30000
-      // see https://github.com/zizzamia/perfume.js#customize--utilities for all the available options
+      resourceTiming: false
+      maxMeasureTime: 15000,
+      // see https://github.com/Zizzamia/perfume.js#perfume-custom-options for all the available options
     }
   }
 ];
@@ -60,8 +68,6 @@ Unpkg](https://unpkg.com/perfume.js/dist/perfume.umd.min.js) setting the `inline
 {
   resolve: 'gatsby-plugin-perfume.js',
   options: {
-    // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-    firstContentfulPaint: true,
     // optional, default to true
     inline: false,
   }
@@ -74,8 +80,6 @@ Unpkg](https://unpkg.com/perfume.js/dist/perfume.umd.min.js) setting the `inline
 {
   resolve: 'gatsby-plugin-perfume.js',
   options: {
-    // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-    firstContentfulPaint: true,
     // optional, if present, a Google Tag Manager event is triggered for every specified performance metric (the event is `performance`)
     googleTagManagerOptions: true
   }
@@ -88,8 +92,6 @@ You can even customize the GTM event name/dataLayer
 {
   resolve: 'gatsby-plugin-perfume.js',
   options: {
-    // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-    firstContentfulPaint: true,
     // optional, if present, a Google Tag Manager event is triggered for every specified performance metric
     googleTagManagerOptions: {
       // optional, default to `performance`, `metricName` and `duration` are passed as event data

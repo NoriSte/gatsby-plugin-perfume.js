@@ -32,15 +32,6 @@ module.exports = {
     // `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-perfume.js",
-      options: {
-        // the options are passed as-are to Perfume.js (except for `analyticsTracker`)
-        resourceTiming: true,
-        dataConsumption: true,
-        firstContentfulPaint: true,
-        firstInputDelay: true,
-        maxMeasureTime: 30000,
-        // see https://github.com/zizzamia/perfume.js#customize--utilities for all the available options
-      },
     },
   ],
 }
