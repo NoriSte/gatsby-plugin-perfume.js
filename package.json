@@ -18,6 +18,8 @@
   "devDependencies": {
     "@babel/cli": "7.10.1",
     "@babel/core": "7.10.1",
+    "@babel/plugin-proposal-class-properties": "7.10.1",
+    "@babel/plugin-proposal-private-methods": "7.10.1",
     "babel-preset-gatsby-package": "0.4.2",
     "cross-env": "7.0.2",
     "cypress": "4.4.0",
