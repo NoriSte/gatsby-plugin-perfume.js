@@ -16,16 +16,16 @@
   "license": "MIT",
   "repository": "https://github.com/NoriSte/gatsby-plugin-perfume.js",
   "devDependencies": {
-    "@babel/cli": "7.10.1",
-    "@babel/core": "7.10.2",
-    "@babel/plugin-proposal-class-properties": "7.10.1",
-    "@babel/plugin-proposal-private-methods": "7.10.1",
+    "@babel/cli": "7.12.13",
+    "@babel/core": "7.12.13",
+    "@babel/plugin-proposal-class-properties": "7.12.13",
+    "@babel/plugin-proposal-private-methods": "7.12.13",
     "babel-preset-gatsby-package": "0.4.3",
-    "cross-env": "7.0.2",
-    "cypress": "4.7.0",
-    "cz-conventional-changelog": "3.2.0",
-    "semantic-release": "17.2.3",
-    "start-server-and-test": "1.11.0"
+    "cross-env": "7.0.3",
+    "cypress": "6.4.0",
+    "cz-conventional-changelog": "3.3.0",
+    "semantic-release": "17.3.8",
+    "start-server-and-test": "1.12.0"
   },
   "config": {
     "commitizen": {
