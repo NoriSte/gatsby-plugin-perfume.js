@@ -58,6 +58,6 @@
     "perfume.js": "^5.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "gatsby": ">=2.0.0"
   }
 }
