@@ -20,7 +20,7 @@
     "@babel/core": "7.13.10",
     "@babel/plugin-proposal-class-properties": "7.13.0",
     "@babel/plugin-proposal-private-methods": "7.13.0",
-    "babel-preset-gatsby-package": "1.0.0",
+    "babel-preset-gatsby-package": "1.1.0",
     "cross-env": "7.0.3",
     "cypress": "6.7.1",
     "cz-conventional-changelog": "3.3.0",
