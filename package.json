@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
-    "perfume.js": "^5.0.2"
+    "perfume.js": "^6.0.0"
   },
   "peerDependencies": {
     "gatsby": ">=2.0.0"
