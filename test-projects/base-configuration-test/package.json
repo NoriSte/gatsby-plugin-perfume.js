@@ -5,11 +5,11 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "3.5.0",
+    "gatsby": "3.5.1",
     "gatsby-plugin-gatsby-cloud": "2.5.0",
     "gatsby-plugin-image": "1.5.0",
     "gatsby-plugin-manifest": "3.5.0",
-    "gatsby-plugin-offline": "4.5.0",
+    "gatsby-plugin-offline": "4.5.1",
     "gatsby-plugin-react-helmet": "4.5.0",
     "gatsby-plugin-sharp": "3.5.0",
     "gatsby-source-filesystem": "3.5.0",
