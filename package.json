@@ -24,7 +24,7 @@
     "cross-env": "7.0.3",
     "cypress": "7.5.0",
     "cz-conventional-changelog": "3.3.0",
-    "semantic-release": "17.4.3",
+    "semantic-release": "17.4.4",
     "start-server-and-test": "1.12.5"
   },
   "config": {
