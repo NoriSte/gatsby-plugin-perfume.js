@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-perfume.js",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Gatsby plugin to add the crossorigin attribute to every <link rel=\"preload\"> tag",
   "main": "index.js",
   "keywords": [
