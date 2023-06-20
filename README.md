@@ -1,3 +1,5 @@
+>  This package has been deprecated. Use at your own risk. See #409
+
 # gatsby-plugin-perfume.js
 
 <a href="http://www.perfumejs.com/">
